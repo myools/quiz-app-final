@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+}
+
+legend {
+    display: none;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin-left: -5px;
+}
+
+header {
+    position: relative;
+    top: 215px;
+    text-align: center;
+    color: white;
+}
+
+form {
+    padding: 15px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    background-color: white;
+    border: solid skyblue 7px;
+    position: relative;
+    top: 225px;
+    padding: 15px;
+    border-radius: 25px;
+    background:  linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) )
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    width: 80px;
+}
+
+#start {
+    margin-top: 265px;
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('blizzard-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#italic, h1 {
+    color: white;
+}
+
+.comment {
+    margin-left: 5px;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+input {
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+.final-score {
+    color: yellow;
+}
+
+@media only screen and (max-width: 450px){
+    .question-container {
+        width: 315px;
+        position: static;
+       
+    }
+
+    form {
+       width: 295px;
+       margin-left: -10px;
+       padding: 10px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    header {
+        position: static;
+        text-align: center;
+        color: white;
+    }
+
+    body {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+#start {
+    margin-top: 65px;
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+}
+
+#incorrect-p, #correct-p {
+    text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 1024px){
+    .question-container, header {
+        position: static;
+    }
+
+    #start {
+        margin-top: 65px;
+    }
+}
